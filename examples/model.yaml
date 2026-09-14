@@ -1,0 +1,8 @@
+# Example model configuration consumed by `celyrion serve`.
+name: example-tiny
+path: ./models/example-tiny
+workers:
+  - Python
+  - Native
+memory_bytes: 1073741824
+max_batch: 32

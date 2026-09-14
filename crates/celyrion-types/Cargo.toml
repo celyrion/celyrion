@@ -1,0 +1,15 @@
+[package]
+name = "celyrion-types"
+description = "Versioned identities, units, records, digests and errors shared across Celyrion"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true

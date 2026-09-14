@@ -1,0 +1,18 @@
+[package]
+name = "celyrion-supervisor"
+description = "Generation lifecycle and safe teardown"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+celyrion-core.workspace = true
+celyrion-observe.workspace = true
+celyrion-types.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true

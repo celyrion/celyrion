@@ -1,0 +1,16 @@
+[package]
+name = "celyrion-cell"
+description = "Bounded mailboxes and effect dispatch around a Celyrion state machine"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+celyrion-core.workspace = true
+celyrion-types.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true

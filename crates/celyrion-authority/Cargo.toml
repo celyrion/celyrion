@@ -1,0 +1,15 @@
+[package]
+name = "celyrion-authority"
+description = "Declared authoritative transactions over Celyrion state"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+celyrion-protocol.workspace = true
+celyrion-types.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,15 @@
+[package]
+name = "celyrion-state"
+description = "Typed state bundles that Celyrion moves, caches and reclaims"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+celyrion-types.workspace = true
+serde.workspace = true
+
+[lints]
+workspace = true

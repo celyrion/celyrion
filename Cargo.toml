@@ -1,0 +1,52 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+publish = false
+
+[workspace.dependencies]
+# External
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_yaml_ng = "0.10"
+thiserror = "2"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Internal
+celyrion-authority = { path = "crates/celyrion-authority" }
+celyrion-cell = { path = "crates/celyrion-cell" }
+celyrion-core = { path = "crates/celyrion-core" }
+celyrion-gateway = { path = "crates/celyrion-gateway" }
+celyrion-groups = { path = "crates/celyrion-groups" }
+celyrion-memory = { path = "crates/celyrion-memory" }
+celyrion-observe = { path = "crates/celyrion-observe" }
+celyrion-pipeline = { path = "crates/celyrion-pipeline" }
+celyrion-protocol = { path = "crates/celyrion-protocol" }
+celyrion-registry = { path = "crates/celyrion-registry" }
+celyrion-runtime = { path = "crates/celyrion-runtime" }
+celyrion-scheduler = { path = "crates/celyrion-scheduler" }
+celyrion-sim = { path = "crates/celyrion-sim" }
+celyrion-state = { path = "crates/celyrion-state" }
+celyrion-supervisor = { path = "crates/celyrion-supervisor" }
+celyrion-transport = { path = "crates/celyrion-transport" }
+celyrion-types = { path = "crates/celyrion-types" }
+celyrion-workers = { path = "crates/celyrion-workers" }
+
+[workspace.lints.rust]
+unsafe_code = "warn"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+all = "warn"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
