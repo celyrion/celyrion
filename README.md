@@ -66,4 +66,4 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-The same hooks run in CI on every pull request and must pass before merging to `main`.
+The same hooks run in CI on every pull request and must pass before merging to the `main` branch.
